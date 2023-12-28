@@ -8,10 +8,16 @@
 <script>
 export default {
     name: 'Counter',
-    props: ['title'],
+    props: {
+        title: String,
+        start: {
+            type: Number,
+            default: 10
+        }
+    },
     data() {
         return {
-            counter: 5
+            counter: this.start
         }
     },
     methods: {
