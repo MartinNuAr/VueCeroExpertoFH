@@ -1,5 +1,6 @@
 <template>
   <h2>{{ customTitle }}</h2>
+  <p datatest-id="counter"> {{ counter }}</p>
   <p> {{ counter }} <sup>2</sup> = {{ squaredCounter }}</p>
   <div class="buttons-container">
     <button @click="increase()">+1</button>
