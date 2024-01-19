@@ -58,4 +58,14 @@ describe('Counter Component', () => {
         expect(value).toBe(10)
     })
 
+    test('Debe mostrar la prop title', () => {
+        const wrapper = shallowMount(Counter, {
+            props: {
+                title
+            }
+        })
+
+
+    })
+
 })
